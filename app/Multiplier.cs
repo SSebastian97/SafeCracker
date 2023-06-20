@@ -11,7 +11,7 @@ public class Multiplier
     public int Transform(DrawFirstGrid drawGrid)
 {
     multiplier = drawGrid.GetMultiplierValue();
-    string numericPart = multiplier.Substring(1);
+    string numericPart = multiplier.Substring(1);//we extract the number from the string with the x format
     int result = int.Parse(numericPart);
     return result;
 }

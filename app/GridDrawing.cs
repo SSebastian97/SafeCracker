@@ -32,7 +32,7 @@ public class DrawFirstGrid
         int columns = 3; // Number of columns in the grid
         string[,] gridValues = new string[rows, columns];
 
-        InitializeGrid(gridValues);
+        GridInitialization(gridValues);
 
         DrawGrid(gridValues);
 
@@ -111,13 +111,10 @@ public class DrawFirstGrid
         {
             Console.WriteLine("Game ended. Multiplier repeated!");
         }
-        else
-        {
-            Console.WriteLine("Game ended.");
-        }
+        
     }
 
-    private void InitializeGrid(string[,] gridValues)
+    private void GridInitialization(string[,] gridValues)
     {
         int rows = gridValues.GetLength(0);
         int columns = gridValues.GetLength(1);
